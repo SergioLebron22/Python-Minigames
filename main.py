@@ -1,5 +1,6 @@
 from minigames import rock_paper_scissors
 from minigames import dice_roll
+from minigames import hangman
 import time
 
 def select():
@@ -11,9 +12,9 @@ def select():
 
     1. Rock-Paper-Scissors
     2. Dice Roll
-    3. Hangman
+    3. Hangman (Pokemon Edition)
     4. 
-    5.
+    5. 
 
 """)
 
@@ -31,7 +32,7 @@ def select():
     elif selection == "3":
         print("Loading Hangman...")
         time.sleep(2)
-        #Hangman
+        hangman()
 
 def main():
     select()
