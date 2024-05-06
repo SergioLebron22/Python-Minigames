@@ -3,22 +3,8 @@ from minigames import dice_roll
 from minigames import hangman
 import time
 
-def select():
-    print(""" 
-
-~= PyMinigames =~
-
-    Choose the game you want to play:      
-
-    1. Rock-Paper-Scissors
-    2. Dice Roll
-    3. Hangman (Pokemon Edition)
-    4. 
-    5. 
-
-""")
-
-    selection = input("Select Game: ")
+def select(selection):
+    
     if selection == "0":
         return
     elif selection == "1":
@@ -33,8 +19,28 @@ def select():
         print("Loading Hangman...")
         time.sleep(2)
         hangman()
+    
 
 def main():
-    select()
+    while True:
+        print(""" 
+
+~= PyMinigames =~
+
+    Choose the game you want to play:      
+
+    1. Rock-Paper-Scissors
+    2. Dice Roll
+    3. Hangman (Pokemon Edition)
+    4. Black Jack (Coming soon)
+    5. Tic Tac Toe (Coming soon)
+    6. exit
+
+""")
+
+        selection = input("Select Game: ")
+        if selection == "6":
+            break
+        select(selection)
 
 main()
