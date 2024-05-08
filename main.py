@@ -34,7 +34,7 @@ def main():
     3. Hangman (Pokemon Edition)
     4. Black Jack (Coming soon)
     5. Tic Tac Toe (Coming soon)
-    6. exit
+    6. Quit
 
 """)
 
