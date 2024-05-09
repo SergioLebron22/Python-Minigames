@@ -10,7 +10,7 @@ def rock_paper_scissors():
 
     while(True):
         choices = ["rock", "paper", "scissors"]
-        again = "y"
+        
         p1 = input("Enter choice: ")
         p2 = random.choice(choices)
 
